@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title> Projeto</title>
+    </head>
+    <body>
+        
+
+    <h1> 
+        O console ele nos ajuda a fazer teste no nossos aplicativos, e encontrar erros.
+  
+    </h1>
+    <p>Declarando Arrays</p>
+    <h3 id="escrever_frutas"></h3>
+    <hr>
+    <p>Primeiro elemento da array</p>
+    <h3 id="primeira_fruta"></h3>
+    <hr>
+    <p>Terceira fruta</p>
+    <h3 id="terceira_fruta"></h3>
+    <hr>
+    <p>Comprimento</p>
+    <h3 id="tamanho"></h3>
+    <hr>
+    <p>Loop For</p>
+    <h3 id="loop"></h3>
+    <hr>
+    <p>Adicionando elementos ao final da array</p>
+    <h3 id="adicionar_fim"></h3>
+    <hr>
+    <p>Letras do alfabeto</p>
+    <h3 id="letras"></h3>
+    <hr>
+    <p>Organizar alfabeto</p>
+    <h3 id="alfabeto"></h3>
+    <hr>
+    <p>Reverter alfabeto</p>
+    <h3 id="reverter_alfabeto"></h3>
+    <hr>
+    <p>Números</p>
+    <h3 id="numeros"></h3>
+    <hr>
+    <p>Número máximo</p>
+    <h3 id="max"></h3>
+    <hr>
+    <p>Número mínimo</p>
+    <h3 id="min"></h3>
+
+    <script>
+    var js=10
+    var matemática=13
+    var hack=js+matemática
+    console.log(hack)
+    var arara=["frutas","verduras","comidas"]
+    document.getElementById("escrever_frutas").innerHTML=arara
+    document.getElementById("primeira_fruta").innerHTML=arara[0]
+    document.getElementById("terceira_fruta").innerHTML=arara[2]
+    document.getElementById("tamanho").innerHTML=arara.length
+    var text=""
+    for(var i=0; i<3; i++){
+        text=text+arara[i]+"<br>"
+    }
+    document.getElementById("loop").innerHTML=text
+    arara.push("bebidas")
+    document.getElementById("adicionar_fim").innerHTML=arara
+    arara.sort()
+    document.getElementById("alfabeto").innerHTML=arara
+    arara.reverse()
+    document.getElementById("reverter_alfabeto").innerHTML=arara
+    </script>
+
+
+    </body>
+
+</html>
